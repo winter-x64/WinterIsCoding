@@ -1,0 +1,31 @@
+{
+  "name": "winteriscoding",
+  "displayName": "WinterIsCoding",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "WinterIsCoding",
+        "uiTheme": "vs-dark",
+        "path": "./themes/WinterIsCoding-color-theme.json"
+      },
+      {
+        "label": "WinterIsCoding Flow",
+        "uiTheme": "vs-dark",
+        "path": "./themes/WinterIsCoding-flow-color-theme.json"
+      },
+      {
+        "label": "WinterIsCoding Zone",
+        "uiTheme": "vs-dark",
+        "path": "./themes/WinterIsCoding-Zone-color-theme.json"
+      }
+    ]
+  }
+}
