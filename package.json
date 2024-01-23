@@ -1,11 +1,23 @@
 {
   "name": "winteriscoding",
   "displayName": "WinterIsCoding",
-  "description": "",
+  "description": "My theme ",
   "version": "0.0.1",
+  "publisher": "winter_x64",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/winter-x64/WinterIsCoding"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
+  "keywords": [
+    "dark",
+    "dark theme",
+    "winteriscoding",
+    "winter",
+    "WinterIsCoding"
+  ],
   "categories": [
     "Themes"
   ],
