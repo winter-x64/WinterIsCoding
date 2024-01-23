@@ -1745,6 +1745,24 @@
       "settings": {
         "fontStyle": "italic"
       }
+    },
+    {
+      "scope": "entity.name.tag.html",
+      "settings": {
+        "foreground": "#ae81ff"
+      }
+    },
+    {
+      "scope": "entity.other.attribute-name.html",
+      "settings": {
+        "foreground": "#FFCC5C"
+      }
+    },
+    {
+      "scope": "punctuation.separator.key-value.html, meta.attribute.content.html, meta.tag.metadata.meta.void.html, text.html.jinja",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
     }
   ],
   "colors": {
@@ -1904,7 +1922,7 @@
     "terminal.ansiYellow": "#ffaf00",
     "breadcrumb.background": "#1a1a1a",
     "breadcrumb.foreground": "#cccccccc",
-    "breadcrumb.focusForeground": "#e0e0e0",
+    "breadcrumb.focusForeground": "#ffffff",
     "editorGroupHeader.tabsBackground": "#171717",
     "editorGroupHeader.tabsBorder": "#1a1a1a",
     "tab.activeForeground": "#ffffff",

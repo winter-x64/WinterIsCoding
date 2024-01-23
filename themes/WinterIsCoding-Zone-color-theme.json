@@ -1745,6 +1745,24 @@
       "settings": {
         "fontStyle": "italic"
       }
+    },
+    {
+      "scope": "entity.name.tag.html",
+      "settings": {
+        "foreground": "#ae81ff"
+      }
+    },
+    {
+      "scope": "entity.other.attribute-name.html",
+      "settings": {
+        "foreground": "#FFCC5C"
+      }
+    },
+    {
+      "scope": "punctuation.separator.key-value.html, meta.attribute.content.html, meta.tag.metadata.meta.void.html, text.html.jinja",
+      "settings": {
+        "foreground": "#FFFFFF"
+      }
     }
   ],
   "colors": {
