@@ -1755,7 +1755,8 @@
     {
       "scope": "entity.other.attribute-name.html",
       "settings": {
-        "foreground": "#FFCC5C"
+        "foreground": "#FFCC5C",
+        "fontStyle": "italic"
       }
     },
     {
