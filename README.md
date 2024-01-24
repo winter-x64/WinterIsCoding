@@ -2,7 +2,7 @@
 
 A cool and cozy theme for VS Code, Made by winter_x64.
 
-![Alt text](assets/default.png)
+<image src="assets/default.png">
 
 ## Installation
 

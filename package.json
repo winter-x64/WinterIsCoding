@@ -21,6 +21,7 @@
   "categories": [
     "Themes"
   ],
+  "icon": "logo.jpg",
   "contributes": {
     "themes": [
       {

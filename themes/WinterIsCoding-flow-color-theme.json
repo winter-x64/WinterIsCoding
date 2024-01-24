@@ -1755,7 +1755,8 @@
     {
       "scope": "entity.other.attribute-name.html",
       "settings": {
-        "foreground": "#FFCC5C"
+        "foreground": "#FFCC5C",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1928,11 +1929,11 @@
     "tab.activeForeground": "#ffffff",
     "tab.border": "#181818",
     "tab.activeBackground": "#181818",
-    "tab.activeBorder": "#171717",
-    "tab.activeBorderTop": "#6366f1",
+    // "tab.activeBorder": "#171717",
+    "tab.activeBorder": "#6366f1",
     "tab.inactiveBackground": "#171717",
     "tab.inactiveForeground": "#ffffff80",
-    "tab.hoverBackground": "#414141",
+    "tab.hoverBackground": "#272727",
     "tab.hoverForeground": "#ffffff",
     "tab.hoverBorder": "#6366f1",
     "scrollbarSlider.background": "#79797966",
@@ -1946,7 +1947,7 @@
     "pickerGroup.border": "#181818",
     "pickerGroup.foreground": "#ffffff",
     "debugToolBar.background": "#1d1d1d",
-    "debugToolBar.border": "#474747",
+    "debugToolBar.border": "#272727",
     "notifications.foreground": "#cccccc",
     "notifications.background": "#181818",
     "notificationToast.border": "#474747",
@@ -2023,6 +2024,6 @@
     "breadcrumb.activeSelectionForeground": "#e0e0e0",
     "editorGutter.commentRangeForeground": "#c5c5c5",
     "debugExceptionWidget.background": "#1d1d1d",
-    "debugExceptionWidget.border": "#474747"
+    "debugExceptionWidget.border": "#272727"
   }
 }

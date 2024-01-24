@@ -1755,7 +1755,8 @@
     {
       "scope": "entity.other.attribute-name.html",
       "settings": {
-        "foreground": "#FFCC5C"
+        "foreground": "#FFCC5C",
+        "fontStyle": "italic"
       }
     },
     {
@@ -1790,7 +1791,7 @@
     "sideBar.border": "#181818",
     "list.inactiveSelectionBackground": "#37373d",
     "list.inactiveSelectionForeground": "#cccccc",
-    "list.hoverBackground": "#4d4d4d",
+    "list.hoverBackground": "#272727",
     "list.hoverForeground": "#ffffff",
     "list.activeSelectionBackground": "#343434",
     "list.activeSelectionForeground": "#ffffff",
@@ -1858,7 +1859,7 @@
     "editor.findRangeHighlightBorder": "#ffffff00",
     "editor.rangeHighlightBackground": "#ffffff0b",
     "editor.rangeHighlightBorder": "#ffffff00",
-    "editor.hoverHighlightBackground": "#264f7840",
+    "editor.hoverHighlightBackground": "#272727",
     "editor.wordHighlightStrongBackground": "#004972b8",
     "editor.wordHighlightBackground": "#575757b8",
     "editor.lineHighlightBackground": "#ffffff0A",
@@ -1928,11 +1929,11 @@
     "tab.activeForeground": "#ffffff",
     "tab.border": "#1a1a1a",
     "tab.activeBackground": "#1a1a1a",
-    "tab.activeBorder": "#1a1a1a",
-    "tab.activeBorderTop": "#6366f1",
+    "tab.activeBorder": "#6366f1",
+    // "tab.activeBorderTop": "#6366f1",
     "tab.inactiveBackground": "#171717",
     "tab.inactiveForeground": "#ffffff80",
-    "tab.hoverBackground": "#2d2d2d",
+    "tab.hoverBackground": "#272727",
     "tab.hoverForeground": "#ffffff",
     "tab.hoverBorder": "#1a1a1a",
     "scrollbarSlider.background": "#79797966",
@@ -1948,7 +1949,7 @@
     "profileBadge.background": "#6366f1",
     "profileBadge.foreground": "#ffffff",
     "debugToolBar.background": "#1d1d1d",
-    "debugToolBar.border": "#474747",
+    "debugToolBar.border": "#272727",
     "notifications.foreground": "#cccccc",
     "notifications.background": "#181818",
     "notificationToast.border": "#474747",
@@ -2028,6 +2029,6 @@
     "breadcrumb.activeSelectionForeground": "#e0e0e0",
     "editorGutter.commentRangeForeground": "#c5c5c5",
     "debugExceptionWidget.background": "#1d1d1d",
-    "debugExceptionWidget.border": "#474747"
+    "debugExceptionWidget.border": "#272727"
   }
 }
