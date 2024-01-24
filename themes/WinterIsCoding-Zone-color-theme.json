@@ -1763,6 +1763,12 @@
       "settings": {
         "foreground": "#FFFFFF"
       }
+    },
+    {
+      "scope": "support.type.property-name.json, string.json ",
+      "settings": {
+        "foreground": "#ae81ff"
+      }
     }
   ],
   "colors": {
