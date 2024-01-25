@@ -1770,6 +1770,18 @@
       "settings": {
         "foreground": "#ae81ff"
       }
+    },
+    {
+      "scope": "entity.name.section.markdown",
+      "settings": {
+        "foreground": "#ae81ff"
+      }
+    },
+    {
+      "scope": "markup.bold",
+      "settings": {
+        "foreground": "#FFCC5C"
+      }
     }
   ],
   "colors": {
