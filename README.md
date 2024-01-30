@@ -1,8 +1,8 @@
 # WinterIsCoding
 
-A cool and cozy theme for VS Code, Made by [winter_x64](https://github.com/winter-x64).
+A cool and cozy theme for VS Code, Made by winter_x64.
 
-![Alt text](images/default.png)
+![preview image](images/default.png)
 
 ## Installation
 
