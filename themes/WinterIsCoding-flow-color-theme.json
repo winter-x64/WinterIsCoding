@@ -1789,6 +1789,7 @@
     "quickInput.background": "#1c1c1c",
     "quickInputList.focusBackground": "#6366f1",
     "quickInputList.focusIconForeground": "#ffffff",
+
     "profileBadge.background": "#6366f1",
     "profileBadge.foreground": "#ffffff",
     "foreground": "#ffffff",
@@ -1851,13 +1852,15 @@
     "button.secondaryForeground": "#ffffff",
     "button.secondaryBackground": "#3a3d41",
     "button.secondaryHoverBackground": "#45494e",
-    "input.background": "#4d4d4d",
+
+    "input.background": "#252525",
     "input.border": "#00000000",
     "input.foreground": "#cccccc",
     "inputOption.activeBackground": "#007fd466",
     "inputOption.activeBorder": "#007acc00",
     "inputOption.activeForeground": "#ffffff",
     "input.placeholderForeground": "#a6a6a6",
+
     "textLink.foreground": "#ffffff",
     "editor.background": "#181818",
     "editor.foreground": "#ffffff",

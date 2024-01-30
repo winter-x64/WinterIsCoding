@@ -1789,6 +1789,7 @@
     "quickInput.background": "#1c1c1c",
     "quickInputList.focusBackground": "#6366f1",
     "quickInputList.focusIconForeground": "#ffffff",
+
     "foreground": "#ffffff",
     "focusBorder": "#1f1f1f",
     "selection.background": "#6366f1",
@@ -1807,13 +1808,13 @@
     "sideBarSectionHeader.border": "#181818",
     "sideBarTitle.foreground": "#ffffff",
     "sideBar.border": "#181818",
+
     "list.inactiveSelectionBackground": "#37373d",
     "list.inactiveSelectionForeground": "#cccccc",
     "list.hoverBackground": "#272727",
     "list.hoverForeground": "#ffffff",
     "list.activeSelectionBackground": "#343434",
     "list.activeSelectionForeground": "#ffffff",
-    "tree.indentGuidesStroke": "#585858",
     "list.dropBackground": "#383b3d",
     "list.highlightForeground": "#ffffff",
     "list.focusBackground": "#6366f1",
@@ -1821,6 +1822,9 @@
     "listFilterWidget.background": "#6366f1",
     "listFilterWidget.outline": "#00000000",
     "listFilterWidget.noMatchesOutline": "#6366f1",
+
+    "tree.indentGuidesStroke": "#585858",
+
     "statusBar.foreground": "#e0e0e0",
     "statusBar.background": "#101010",
     "statusBarItem.hoverBackground": "#2a2a2a",
@@ -1830,11 +1834,13 @@
     "statusBar.noFolderForeground": "#ffffff",
     "statusBarItem.remoteBackground": "#6366f1",
     "statusBarItem.remoteForeground": "#ffffff",
+
     "titleBar.activeBackground": "#181818",
     "titleBar.activeForeground": "#cccccc",
     "titleBar.inactiveBackground": "#262626",
     "titleBar.inactiveForeground": "#cccccc99",
     "titleBar.border": "#00000000",
+
     "menubar.selectionForeground": "#cccccc",
     "menubar.selectionBackground": "#ffffff1a",
     "menubar.selectionBorder": "#171717",
@@ -1845,13 +1851,15 @@
     "menu.selectionBorder": "#00000000",
     "menu.separatorBackground": "#bbbbbb",
     "menu.border": "#00000085",
+
     "button.background": "#6366f1",
     "button.foreground": "#ffffff",
     "button.hoverBackground": "#8184f7",
     "button.secondaryForeground": "#ffffff",
     "button.secondaryBackground": "#3a3d41",
     "button.secondaryHoverBackground": "#45494e",
-    "input.background": "#4d4d4d",
+
+    "input.background": "#252525",
     "input.border": "#00000000",
     "input.foreground": "#cccccc",
     "inputOption.activeBackground": "#007fd466",

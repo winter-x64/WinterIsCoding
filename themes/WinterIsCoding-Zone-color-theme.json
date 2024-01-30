@@ -1853,6 +1853,7 @@
     "button.secondaryForeground": "#ffffff",
     "button.secondaryBackground": "#3a3d41",
     "button.secondaryHoverBackground": "#45494e",
+    
     "input.background": "#252525",
     "input.border": "#101010",
     "input.foreground": "#ffffff",
@@ -1860,6 +1861,7 @@
     "inputOption.activeBorder": "#007acc00",
     "inputOption.activeForeground": "#ffffff",
     "input.placeholderForeground": "#a6a6a6",
+
     "textLink.foreground": "#ffffff",
     "editor.background": "#181818",
     "editor.foreground": "#ffffff",
