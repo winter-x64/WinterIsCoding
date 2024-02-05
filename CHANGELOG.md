@@ -1,8 +1,6 @@
 # Change Log
 
-All notable changes to the "winteriscoding" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+In the release, you will get syntax highlighting for json, html, md files
 
 ## [Unreleased]
 

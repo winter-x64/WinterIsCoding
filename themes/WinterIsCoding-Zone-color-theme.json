@@ -1853,7 +1853,7 @@
     "button.secondaryForeground": "#ffffff",
     "button.secondaryBackground": "#3a3d41",
     "button.secondaryHoverBackground": "#45494e",
-    
+
     "input.background": "#252525",
     "input.border": "#101010",
     "input.foreground": "#ffffff",
