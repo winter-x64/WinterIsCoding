@@ -40,5 +40,8 @@
         "path": "./themes/WinterIsCoding-Zone-color-theme.json"
       }
     ]
+  },
+  "dependencies": {
+    "@vscode/vsce": "^2.25.0"
   }
 }

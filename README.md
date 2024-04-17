@@ -2,6 +2,8 @@
 
 A cool and cozy theme for VS Code, Made by winter_x64.
 
+Hey Everyone, I just wanted to thank everyone who installed my theme on vscode. WinterlsCoding is my first ever product that I released a few months ago to the public I never thought that I would get 100 installs, I know it's not a huge number, but for me it's a really really big number. So once again, I want to thank everyone for using my theme and thanks for the support *
+
 ![preview image](images/default.png)
 
 ## Installation
