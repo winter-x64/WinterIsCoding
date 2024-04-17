@@ -1,7 +1,7 @@
 {
   "name": "winteriscoding",
   "displayName": "WinterIsCoding",
-  "description": "My theme ",
+  "description": "A Cold theme for the people who like winter",
   "version": "0.13.0",
   "publisher": "winterx64",
   "repository": {
@@ -16,7 +16,9 @@
     "dark theme",
     "winteriscoding",
     "winter",
-    "WinterIsCoding"
+    "WinterIsCoding",
+    "New theme",
+    "New Dark theme"
   ],
   "categories": [
     "Themes"
@@ -38,6 +40,11 @@
         "label": "WinterIsCoding Zone",
         "uiTheme": "vs-dark",
         "path": "./themes/WinterIsCoding-Zone-color-theme.json"
+      },
+      {
+        "label": "WinterIsCoding Zone [no italic]",
+        "uiTheme": "vs-dark",
+        "path": "./themes/WinterIsCoding-Zone-no-italic-color-theme.json"
       }
     ]
   },
