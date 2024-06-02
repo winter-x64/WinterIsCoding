@@ -1753,7 +1753,7 @@
       }
     },
     {
-      "scope": "entity.other.attribute-name.html",
+      "scope": "entity.other.attribute-name.html, meta.function.python, meta.class.python,storage.type.function.python",
       "settings": {
         "foreground": "#FFCC5C",
         "fontStyle": "italic"
