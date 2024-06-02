@@ -1,3 +1,2 @@
-node_modules
-*.vsix
-token.txt
+node_modules/
+.env
