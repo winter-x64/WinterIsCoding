@@ -1785,7 +1785,6 @@
         {
             "scope": "support.type.property-name",
             "settings": {
-                "fontStyle": "italic",
                 "foreground": "#ae81ff"
             }
         }
