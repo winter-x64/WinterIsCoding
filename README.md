@@ -9,6 +9,24 @@
 3. **WinterIsCoding Zone** - A focused dark theme with enhanced contrast, perfect for deep work.
 4. **WinterIsCoding Zone [no italic]** - A variation of the Zone theme for those who prefer clean, non-italicized text.
 
+## Themes Preview
+
+### WinterIsCoding
+
+![WinterIsCoding Preview](./images/default.png)
+
+### WinterIsCoding Flow
+
+![WinterIsCoding Flow Preview](./images/flow.png)
+
+### WinterIsCoding Zone
+
+![WinterIsCoding Zone Preview](./images/zone.png)
+
+### WinterIsCoding Zone : no italic
+
+![WinterIsCoding Zone : no italic Preview](./images/zone.png)
+
 ## Features:
 
 -   Optimized for readability and focus with carefully selected colors.
@@ -32,24 +50,6 @@
 1. Clone or download this repository.
 2. Copy the theme files to your VS Code `extensions` folder.
 3. Open the Command Palette (`Ctrl+Shift+P`), then select `Preferences: Color Theme` and pick your desired theme.
-
-## Themes Preview
-
-### WinterIsCoding
-
-![WinterIsCoding Preview](./images/default.png)
-
-### WinterIsCoding Flow
-
-![WinterIsCoding Flow Preview](./images/flow.png)
-
-### WinterIsCoding Zone
-
-![WinterIsCoding Zone Preview](./images/zone.png)
-
-### WinterIsCoding Zone : no italic
-
-![WinterIsCoding Zone : no italic Preview](./images/zone.png)
 
 ## Contributing
 

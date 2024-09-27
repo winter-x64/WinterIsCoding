@@ -45,6 +45,11 @@
         "label": "WinterIsCoding Zone [no italic]",
         "uiTheme": "vs-dark",
         "path": "./themes/WinterIsCoding-Zone-no-italic-color-theme.json"
+      },
+      {
+        "label": "WinterIsCoding Gift",
+        "uiTheme": "vs-dark",
+        "path": "./themes/gift.json"
       }
     ]
   },
