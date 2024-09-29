@@ -1,59 +1,59 @@
 {
-  "name": "winteriscoding",
-  "displayName": "WinterIsCoding",
-  "description": "A Cold theme for the people who like winter",
-  "version": "2.0.0",
-  "publisher": "winterx64",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/winter-x64/WinterIsCoding"
-  },
-  "engines": {
-    "vscode": "^1.85.0"
-  },
-  "keywords": [
-    "dark",
-    "dark theme",
-    "winteriscoding",
-    "winter",
-    "WinterIsCoding",
-    "New theme",
-    "New Dark theme"
-  ],
-  "categories": [
-    "Themes"
-  ],
-  "icon": "logo.jpg",
-  "contributes": {
-    "themes": [
-      {
-        "label": "WinterIsCoding",
-        "uiTheme": "vs-dark",
-        "path": "./themes/WinterIsCoding-color-theme.json"
-      },
-      {
-        "label": "WinterIsCoding Flow",
-        "uiTheme": "vs-dark",
-        "path": "./themes/WinterIsCoding-flow-color-theme.json"
-      },
-      {
-        "label": "WinterIsCoding Zone",
-        "uiTheme": "vs-dark",
-        "path": "./themes/WinterIsCoding-Zone-color-theme.json"
-      },
-      {
-        "label": "WinterIsCoding Zone [no italic]",
-        "uiTheme": "vs-dark",
-        "path": "./themes/WinterIsCoding-Zone-no-italic-color-theme.json"
-      },
-      {
-        "label": "WinterIsCoding Gift",
-        "uiTheme": "vs-dark",
-        "path": "./themes/gift.json"
-      }
-    ]
-  },
-  "dependencies": {
-    "@vscode/vsce": "^2.25.0"
-  }
+    "name": "winteriscoding",
+    "displayName": "WinterIsCoding",
+    "description": "A Cold theme for the people who like winter",
+    "version": "2.0.0",
+    "publisher": "winterx64",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/winter-x64/WinterIsCoding"
+    },
+    "engines": {
+        "vscode": "^1.85.0"
+    },
+    "keywords": [
+        "dark",
+        "dark theme",
+        "winteriscoding",
+        "winter",
+        "WinterIsCoding",
+        "New theme",
+        "New Dark theme"
+    ],
+    "categories": [
+        "Themes"
+    ],
+    "icon": "logo.jpg",
+    "contributes": {
+        "themes": [
+            {
+                "label": "WinterIsCoding",
+                "uiTheme": "vs-dark",
+                "path": "./themes/WinterIsCoding-color-theme.json"
+            },
+            {
+                "label": "WinterIsCoding Flow",
+                "uiTheme": "vs-dark",
+                "path": "./themes/WinterIsCoding-flow-color-theme.json"
+            },
+            {
+                "label": "WinterIsCoding Zone",
+                "uiTheme": "vs-dark",
+                "path": "./themes/WinterIsCoding-Zone-color-theme.json"
+            },
+            {
+                "label": "WinterIsCoding Zone [no italic]",
+                "uiTheme": "vs-dark",
+                "path": "./themes/WinterIsCoding-Zone-no-italic-color-theme.json"
+            },
+            {
+                "label": "WinterIsCoding Preview",
+                "uiTheme": "vs-dark",
+                "path": "./themes/gift.json"
+            }
+        ]
+    },
+    "dependencies": {
+        "@vscode/vsce": "^2.25.0"
+    }
 }
