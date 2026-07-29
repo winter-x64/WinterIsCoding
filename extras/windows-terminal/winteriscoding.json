@@ -1,0 +1,23 @@
+{
+    "name": "WinterIsCoding",
+    "background": "#181818",
+    "foreground": "#FFFFFF",
+    "cursorColor": "#6366F1",
+    "selectionBackground": "#38BDF840",
+    "black": "#181818",
+    "red": "#FF8484",
+    "green": "#9BB955",
+    "yellow": "#FFCC5C",
+    "blue": "#77D2FF",
+    "purple": "#AE81FF",
+    "cyan": "#8DBDFF",
+    "white": "#FFFFFF",
+    "brightBlack": "#5A5A5A",
+    "brightRed": "#F48771",
+    "brightGreen": "#B5D96B",
+    "brightYellow": "#FFE08A",
+    "brightBlue": "#9CDCFE",
+    "brightPurple": "#C586C0",
+    "brightCyan": "#B4D7FF",
+    "brightWhite": "#FFFFFF"
+}
