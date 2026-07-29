@@ -6,10 +6,19 @@
     "publisher": "winterx64",
     "repository": {
         "type": "git",
-        "url": "https://github.com/winter-x64/WinterIsCoding"
+        "url": "https://github.com/winterx64/WinterIsCoding"
+    },
+    "homepage": "https://github.com/winterx64/WinterIsCoding#readme",
+    "bugs": {
+        "url": "https://github.com/winterx64/WinterIsCoding/issues"
     },
     "engines": {
-        "vscode": "^1.85.0"
+        "vscode": "^1.90.0"
+    },
+    "scripts": {
+        "build": "node scripts/build.js",
+        "package": "vsce package",
+        "vscode:prepublish": "npm run build"
     },
     "keywords": [
         "dark",
@@ -23,7 +32,7 @@
     "categories": [
         "Themes"
     ],
-    "icon": "logo.jpg",
+    "icon": "logo.png",
     "contributes": {
         "themes": [
             {
@@ -53,7 +62,7 @@
             }
         ]
     },
-    "dependencies": {
+    "devDependencies": {
         "@vscode/vsce": "^3.9.2"
     }
 }
