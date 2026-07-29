@@ -82,15 +82,41 @@ const expandedSemanticTokens = {
 };
 
 function stripCommentsAndParse(jsonString) {
-    // Remove single line comments
     let cleaned = jsonString.replace(/^\s*\/\/.*$/gm, '');
-    // Remove trailing commas before closing braces or brackets
     cleaned = cleaned.replace(/,\s*([\]}])/g, '$1');
     return JSON.parse(cleaned);
 }
 
+function applyVariantDesignPillars(filename, colors) {
+    if (filename.includes('flow')) {
+        // Flow: Borderless single sheet design
+        colors["sideBar.border"] = "#00000000";
+        colors["panel.border"] = "#00000000";
+        colors["editorGroup.border"] = "#00000000";
+        colors["editorGroupHeader.tabsBorder"] = "#00000000";
+        colors["statusBar.border"] = "#00000000";
+        colors["titleBar.border"] = "#00000000";
+        colors["diffEditor.border"] = "#00000000";
+        colors["focusBorder"] = "#6366f188";
+    } else if (filename.toLowerCase().includes('zone')) {
+        // Zone: Framed zone borders design
+        colors["sideBar.border"] = "#282828";
+        colors["panel.border"] = "#282828";
+        colors["editorGroup.border"] = "#333333";
+        colors["editorGroupHeader.tabsBorder"] = "#282828";
+        colors["statusBar.border"] = "#282828";
+        colors["titleBar.border"] = "#282828";
+        colors["diffEditor.border"] = "#333333";
+        colors["focusBorder"] = "#6366f1";
+    } else {
+        // Normal: Complete panels design (layered background panels)
+        colors["focusBorder"] = "#6366f1";
+    }
+}
+
 function updateTheme(filePath) {
-    console.log(`Processing theme: ${path.basename(filePath)}...`);
+    const filename = path.basename(filePath);
+    console.log(`Processing theme: ${filename}...`);
     const rawContent = fs.readFileSync(filePath, 'utf8');
     const themeData = stripCommentsAndParse(rawContent);
 
@@ -129,6 +155,9 @@ function updateTheme(filePath) {
         }
     }
 
+    // Apply architectural design pillars for Normal, Flow, and Zone
+    applyVariantDesignPillars(filename, updatedTheme.colors);
+
     // 4. Boost low contrast comments for WCAG AA (>= 4.5:1)
     if (Array.isArray(updatedTheme.tokenColors)) {
         for (const tokenRule of updatedTheme.tokenColors) {
@@ -144,10 +173,10 @@ function updateTheme(filePath) {
     }
 
     fs.writeFileSync(filePath, JSON.stringify(updatedTheme, null, 4) + '\n', 'utf8');
-    console.log(`Successfully updated ${path.basename(filePath)}.`);
+    console.log(`Successfully updated ${filename}.`);
 }
 
-console.log('Building themes to 2026 standards...');
+console.log('Building themes with variant design pillars...');
 for (const file of themeFiles) {
     const fullPath = path.join(THEMES_DIR, file);
     if (fs.existsSync(fullPath)) {

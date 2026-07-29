@@ -1935,7 +1935,7 @@
         "quickInputList.focusBackground": "#6366f1",
         "quickInputList.focusIconForeground": "#ffffff",
         "foreground": "#ffffff",
-        "focusBorder": "#1f1f1f",
+        "focusBorder": "#6366f1",
         "selection.background": "#6366f1",
         "scrollbar.shadow": "#181818",
         "activityBar.foreground": "#ffffff",
