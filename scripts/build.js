@@ -176,6 +176,120 @@ function updateTheme(filePath) {
     console.log(`Successfully updated ${filename}.`);
 }
 
+function generateOledVariant(baseThemePath) {
+    const oledPath = path.join(THEMES_DIR, 'WinterIsCoding-OLED-color-theme.json');
+    console.log('Generating WinterIsCoding Midnight OLED variant...');
+    const rawContent = fs.readFileSync(baseThemePath, 'utf8');
+    const themeData = stripCommentsAndParse(rawContent);
+
+    themeData.name = "WinterIsCoding Midnight OLED";
+    themeData.type = "dark";
+    if (!themeData.colors) themeData.colors = {};
+
+    themeData.colors["editor.background"] = "#000000";
+    themeData.colors["sideBar.background"] = "#000000";
+    themeData.colors["activityBar.background"] = "#000000";
+    themeData.colors["statusBar.background"] = "#000000";
+    themeData.colors["editorGroupHeader.tabsBackground"] = "#000000";
+    themeData.colors["tab.inactiveBackground"] = "#000000";
+    themeData.colors["tab.activeBackground"] = "#0a0a0a";
+    themeData.colors["panel.background"] = "#000000";
+    themeData.colors["sideBar.border"] = "#222222";
+    themeData.colors["panel.border"] = "#222222";
+    themeData.colors["editorGroup.border"] = "#222222";
+    themeData.colors["focusBorder"] = "#6366f1";
+    themeData.colors["editorStickyScroll.background"] = "#000000";
+    themeData.colors["commandCenter.background"] = "#000000";
+
+    fs.writeFileSync(oledPath, JSON.stringify(themeData, null, 4) + '\n', 'utf8');
+    updateTheme(oledPath);
+}
+
+function generateFrostLightVariant() {
+    const frostPath = path.join(THEMES_DIR, 'WinterIsCoding-Frost-Light-color-theme.json');
+    console.log('Generating WinterIsCoding Frost Light variant...');
+
+    const frostTheme = {
+        "$schema": "vscode://schemas/color-theme",
+        "name": "WinterIsCoding Frost Light",
+        "type": "light",
+        "semanticHighlighting": true,
+        "semanticTokenColors": {
+            "enumMember": { "foreground": "#0284c7" },
+            "variable.constant": { "foreground": "#0f172a" },
+            "variable.defaultLibrary": { "foreground": "#d97706" },
+            "parameter": { "foreground": "#0284c7" },
+            "property": { "foreground": "#0284c7" },
+            "type": { "foreground": "#0d9488" },
+            "class": { "foreground": "#0d9488" },
+            "interface": { "foreground": "#0d9488" },
+            "function": { "foreground": "#2563eb" },
+            "method": { "foreground": "#2563eb" },
+            "macro": { "foreground": "#7c3aed" }
+        },
+        "tokenColors": [
+            {
+                "scope": ["comment", "punctuation.definition.comment"],
+                "settings": { "foreground": "#64748b", "fontStyle": "italic" }
+            },
+            {
+                "scope": ["string", "punctuation.definition.string"],
+                "settings": { "foreground": "#0284c7" }
+            },
+            {
+                "scope": ["keyword", "storage.type", "storage.modifier"],
+                "settings": { "foreground": "#6366f1", "fontStyle": "bold" }
+            },
+            {
+                "scope": ["entity.name.function", "support.function"],
+                "settings": { "foreground": "#2563eb" }
+            },
+            {
+                "scope": ["entity.name.type", "entity.name.class", "support.class"],
+                "settings": { "foreground": "#0d9488" }
+            },
+            {
+                "scope": ["constant.numeric", "constant.language"],
+                "settings": { "foreground": "#d97706" }
+            },
+            {
+                "scope": ["variable", "support.variable"],
+                "settings": { "foreground": "#0f172a" }
+            }
+        ],
+        "colors": {
+            "editor.background": "#ffffff",
+            "editor.foreground": "#0f172a",
+            "sideBar.background": "#f1f5f9",
+            "sideBar.foreground": "#334155",
+            "sideBar.border": "#e2e8f0",
+            "activityBar.background": "#e2e8f0",
+            "activityBar.foreground": "#0f172a",
+            "activityBarBadge.background": "#0ea5e9",
+            "activityBarBadge.foreground": "#ffffff",
+            "statusBar.background": "#0ea5e9",
+            "statusBar.foreground": "#ffffff",
+            "editorGroupHeader.tabsBackground": "#f1f5f9",
+            "tab.activeBackground": "#ffffff",
+            "tab.activeForeground": "#0f172a",
+            "tab.inactiveBackground": "#f1f5f9",
+            "tab.inactiveForeground": "#64748b",
+            "editor.lineHighlightBackground": "#f1f5f9",
+            "editor.selectionBackground": "#38bdf840",
+            "focusBorder": "#0ea5e9",
+            "editorBracketHighlight.foreground1": "#d97706",
+            "editorBracketHighlight.foreground2": "#0284c7",
+            "editorBracketHighlight.foreground3": "#7c3aed",
+            "editorBracketHighlight.foreground4": "#6366f1",
+            "editorBracketHighlight.foreground5": "#16a34a",
+            "editorBracketHighlight.foreground6": "#dc2626"
+        }
+    };
+
+    fs.writeFileSync(frostPath, JSON.stringify(frostTheme, null, 4) + '\n', 'utf8');
+    console.log('Successfully generated WinterIsCoding Frost Light.');
+}
+
 console.log('Building themes with variant design pillars...');
 for (const file of themeFiles) {
     const fullPath = path.join(THEMES_DIR, file);
@@ -185,4 +299,9 @@ for (const file of themeFiles) {
         console.warn(`Warning: Theme file not found: ${file}`);
     }
 }
+
+// Generate OLED & Light variants
+generateOledVariant(path.join(THEMES_DIR, 'WinterIsCoding-color-theme.json'));
+generateFrostLightVariant();
+
 console.log('All themes built successfully!');

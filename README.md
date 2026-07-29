@@ -1,64 +1,69 @@
-# WinterIsCoding - VS Code Theme
+# ❄️ WinterIsCoding — Modern VS Code Theme Pack
 
-**WinterIsCoding** is a sleek and modern theme pack designed for developers who want a smooth, clean coding experience. It comes in four distinct dark mode variations to suit your coding flow and style preferences.
+**WinterIsCoding** is a sleek, modern, cold-toned theme pack designed for developers who thrive in clean, distraction-free coding environments.
 
-## Themes Included:
+---
 
-1. **WinterIsCoding** - The standard dark theme with cool, calming tones for a distraction-free coding experience.
-2. **WinterIsCoding Flow** - A smooth, flowing dark theme designed for seamless transitions between different coding tasks.
-3. **WinterIsCoding Zone** - A focused dark theme with enhanced contrast, perfect for deep work.
-4. **WinterIsCoding Zone [no italic]** - A variation of the Zone theme for those who prefer clean, non-italicized text.
+## 🎨 Themes Included
 
-## Themes Preview
+| Variant | Concept & Focus | Ideal Usage |
+| :--- | :--- | :--- |
+| **WinterIsCoding** | **Complete Panels Design**: Multi-layer panel depth with cool midnight surface tones | Everyday coding & general IDE usage |
+| **WinterIsCoding Flow** | **Single Sheet Canvas**: Borderless fluid surface with no dividing panel lines | Smooth multi-hour coding sessions |
+| **WinterIsCoding Zone** | **Framed Focus Zones**: Crisp, structured boundary borders around every pane | Deep focus & high-concentration work |
+| **WinterIsCoding Zone [no italic]** | **Clean Non-Italic Zone**: Framed zone layout with strictly non-italicized syntax | Codebases requiring uniform typography |
+| **WinterIsCoding Midnight OLED** | **Pure Black OLED (#000000)**: Ultra-deep contrast optimized for OLED displays | Battery saving & maximum contrast |
+| **WinterIsCoding Frost Light** | **Crisp Blizzard Light**: High-contrast slate & ice blue light theme | Bright environments & daytime coding |
+
+---
+
+## 🖌️ Palette Breakdown
+
+| Syntax Token | Color Hex | Visual Swatch |
+| :--- | :--- | :--- |
+| **Keywords & Controls** | `#6366F1` | 🟪 Electric Indigo |
+| **Functions & Methods** | `#FFCC5C` | 🟨 Frost Gold |
+| **Types & Classes** | `#8DBDFF` | 🟦 Sky Cyan |
+| **Strings & Text** | `#77D2FF` | 🟦 Ice Blue |
+| **Macros & Annotations** | `#AE81FF` | 🟪 Lavender Purple |
+| **Comments (WCAG AA)** | `#808080` | ⬜ Slate Gray |
+
+---
+
+## 📸 Previews
 
 ### WinterIsCoding
-
 ![WinterIsCoding Preview](./images/default.png)
 
 ### WinterIsCoding Flow
-
 ![WinterIsCoding Flow Preview](./images/flow.png)
 
 ### WinterIsCoding Zone
-
 ![WinterIsCoding Zone Preview](./images/zone.png)
 
-### WinterIsCoding Zone : no italic
+---
 
-![WinterIsCoding Zone : no italic Preview](./images/zone.png)
+## 🖥️ Terminal Extras
 
-## Features:
+Companion color schemes for Windows Terminal and Alacritty are included in the [`extras/`](./extras) folder:
 
--   Optimized for readability and focus with carefully selected colors.
--   Dark themes that reduce eye strain during long coding sessions.
--   Fully compatible with a wide range of programming languages and file types.
--   Support for italic and non-italic text to match your style preferences.
+- **Windows Terminal**: [`extras/windows-terminal/winteriscoding.json`](./extras/windows-terminal/winteriscoding.json)
+- **Alacritty**: [`extras/alacritty/winteriscoding.toml`](./extras/alacritty/winteriscoding.toml)
 
-## Installation
+---
+
+## 📦 Installation
 
 ### Visual Studio Code Marketplace:
 
-1. Open VS Code.
-2. Go to the Extensions view by clicking the Extensions icon in the Activity Bar.
-3. Search for `WinterIsCoding`.
-4. Click **Install**.
-5. Open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS), then type and select `Preferences: Color Theme`.
-6. Choose your preferred WinterIsCoding theme from the list.
-
-### Manual Installation:
-
-1. Clone or download this repository.
-2. Copy the theme files to your VS Code `extensions` folder.
-3. Open the Command Palette (`Ctrl+Shift+P`), then select `Preferences: Color Theme` and pick your desired theme.
-
-## Contributing
-
-We welcome contributions! If you have ideas or improvements, feel free to fork the repository, create a new branch, and submit a pull request. Let's make WinterIsCoding even better together.
-
-## License
-
-This theme is licensed under the [MIT License](./LICENSE.md).
+1. Open **VS Code**.
+2. Press `Ctrl+P` (or `Cmd+P` on macOS) and run `ext install winterx64.winteriscoding`.
+3. Open the Command Palette (`Ctrl+Shift+P` / `Cmd+Shift+P`), search `Preferences: Color Theme`, and pick your preferred variant.
 
 ---
+
+## 📄 License
+
+Licensed under the [MIT License](./LICENSE.md).
 
 Enjoy coding with **WinterIsCoding**! ❄️
