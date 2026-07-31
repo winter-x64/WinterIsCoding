@@ -12,6 +12,51 @@ const themeFiles = [
 ];
 
 const modernUiTokens = {
+    // Buttons & Action Controls (Fixes hover Quick Fix white button bug across all dark themes)
+    "button.background": "#6366f1",
+    "button.foreground": "#ffffff",
+    "button.hoverBackground": "#4f46e5",
+    "button.secondaryBackground": "#2a2a2a",
+    "button.secondaryForeground": "#ffffff",
+    "button.secondaryHoverBackground": "#383838",
+    "button.border": "#00000000",
+    "button.separator": "#333333",
+
+    // Extension & Action Buttons
+    "extensionButton.prominentBackground": "#6366f1",
+    "extensionButton.prominentForeground": "#ffffff",
+    "extensionButton.prominentHoverBackground": "#4f46e5",
+    "extensionButton.background": "#2a2a2a",
+    "extensionButton.foreground": "#ffffff",
+    "extensionButton.hoverBackground": "#383838",
+
+    // Lightbulb & Code Action Icons
+    "editorLightBulb.foreground": "#ffcc5c",
+    "editorLightBulbAutoFix.foreground": "#6366f1",
+    "editorLightBulbAi.foreground": "#6366f1",
+
+    // Keybindings & Inline Badges in Hover / Tooltips
+    "keybindingLabel.background": "#2a2a2a",
+    "keybindingLabel.foreground": "#ffffff",
+    "keybindingLabel.border": "#3a3a3a",
+    "keybindingLabel.bottomBorder": "#3a3a3a",
+
+    // Markdown & Preformatted Text in Hover Popups
+    "textCodeBlock.background": "#242424",
+    "textPreformat.background": "#242424",
+    "textPreformat.foreground": "#ffffff",
+    "textBlockQuote.background": "#242424",
+    "textBlockQuote.border": "#6366f1",
+    "textLink.foreground": "#6366f1",
+    "textLink.activeForeground": "#6366f1",
+    "textSeparator.foreground": "#333333",
+
+    // Hover Widget & Popups
+    "editorHoverWidget.background": "#1e1e1e",
+    "editorHoverWidget.foreground": "#cccccc",
+    "editorHoverWidget.border": "#333333",
+    "editorHoverWidget.statusBarBackground": "#242424",
+
     // Sticky Scroll
     "editorStickyScroll.background": "#181818",
     "editorStickyScrollHover.background": "#272727",
@@ -148,11 +193,9 @@ function updateTheme(filePath) {
         delete updatedTheme.colors["editorIndentGuide.activeBackground1"];
     }
 
-    // Inject missing modern UI tokens
+    // Inject modern UI tokens
     for (const [tokenKey, tokenVal] of Object.entries(modernUiTokens)) {
-        if (!updatedTheme.colors[tokenKey]) {
-            updatedTheme.colors[tokenKey] = tokenVal;
-        }
+        updatedTheme.colors[tokenKey] = tokenVal;
     }
 
     // Apply architectural design pillars for Normal, Flow, and Zone
@@ -277,6 +320,22 @@ function generateFrostLightVariant() {
             "editor.lineHighlightBackground": "#f1f5f9",
             "editor.selectionBackground": "#38bdf840",
             "focusBorder": "#0ea5e9",
+            "button.background": "#0ea5e9",
+            "button.foreground": "#ffffff",
+            "button.hoverBackground": "#0284c7",
+            "button.secondaryBackground": "#e2e8f0",
+            "button.secondaryForeground": "#0f172a",
+            "button.secondaryHoverBackground": "#cbd5e1",
+            "toolbar.hoverBackground": "#e2e8f0",
+            "toolbar.activeBackground": "#cbd5e1",
+            "editorHoverWidget.background": "#ffffff",
+            "editorHoverWidget.foreground": "#0f172a",
+            "editorHoverWidget.border": "#e2e8f0",
+            "editorHoverWidget.statusBarBackground": "#f1f5f9",
+            "keybindingLabel.background": "#e2e8f0",
+            "keybindingLabel.foreground": "#0f172a",
+            "keybindingLabel.border": "#cbd5e1",
+            "textCodeBlock.background": "#f8fafc",
             "editorBracketHighlight.foreground1": "#d97706",
             "editorBracketHighlight.foreground2": "#0284c7",
             "editorBracketHighlight.foreground3": "#7c3aed",
@@ -287,6 +346,7 @@ function generateFrostLightVariant() {
     };
 
     fs.writeFileSync(frostPath, JSON.stringify(frostTheme, null, 4) + '\n', 'utf8');
+    updateTheme(frostPath);
     console.log('Successfully generated WinterIsCoding Frost Light.');
 }
 
