@@ -6,14 +6,23 @@
 
 ## 🎨 Themes Included
 
+### 🏛️ The OG Lineup (Same Canonical Syntax, Different Architectural Framing)
+
+| Variant | Concept & Framing | Ideal Usage |
+| :--- | :--- | :--- |
+| **`WinterIsCoding [OG]`** | **Complete Panels Design**: Multi-layer panel depth with cool midnight surface tones | Everyday coding & general IDE usage |
+| **`WinterIsCoding [OG] Flow`** | **Single Sheet Canvas**: Borderless fluid surface with no dividing panel lines (`#00000000`) | Smooth multi-hour coding sessions |
+| **`WinterIsCoding [OG] Zone`** | **Framed Focus Zones**: Crisp, structured boundary borders (`#282828`) around every pane | Deep focus & high-concentration work |
+| **`WinterIsCoding [OG] Zone [no italic]`** | **Clean Non-Italic Zone**: Framed zone layout with strictly non-italicized syntax | Codebases requiring uniform typography |
+
+### 🚀 The New Lineup (Dedicated Color & Semantic Architectures)
+
 | Variant | Concept & Focus | Ideal Usage |
 | :--- | :--- | :--- |
-| **WinterIsCoding** | **Complete Panels Design**: Multi-layer panel depth with cool midnight surface tones | Everyday coding & general IDE usage |
-| **WinterIsCoding Flow** | **Single Sheet Canvas**: Borderless fluid surface with no dividing panel lines | Smooth multi-hour coding sessions |
-| **WinterIsCoding Zone** | **Framed Focus Zones**: Crisp, structured boundary borders around every pane | Deep focus & high-concentration work |
-| **WinterIsCoding Zone [no italic]** | **Clean Non-Italic Zone**: Framed zone layout with strictly non-italicized syntax | Codebases requiring uniform typography |
-| **WinterIsCoding Midnight OLED** | **Pure Black OLED (#000000)**: Ultra-deep contrast optimized for OLED displays | Battery saving & maximum contrast |
-| **WinterIsCoding Frost Light** | **Crisp Blizzard Light**: High-contrast slate & ice blue light theme | Bright environments & daytime coding |
+| **`WinterIsCoding [New] Midnight OLED`** | **Pure Black OLED (#000000)**: Ultra-deep contrast optimized for OLED displays | Battery saving & maximum contrast |
+| **`WinterIsCoding [New] Frost Light`** | **Crisp Blizzard Light**: 100% pure slate & ice blue light theme | Bright environments & daytime coding |
+| **`WinterIsCoding [New] Focus Mode`** | **Deep Obsidian Monolith (#0D1117)**: Seamless GitHub/Obsidian surface system | Terminal-first & distraction-free flow |
+| **`WinterIsCoding [New] Ergonomic Preview`** | **Cognitive Ergonomics**: Mint strings (`#5EEAD4`), boosted AA keywords (`#818CF8`) | Extended deep-work & ocular comfort |
 
 ---
 
@@ -33,12 +42,15 @@
 ## 📸 Previews
 
 ### WinterIsCoding
+
 ![WinterIsCoding Preview](./images/default.png)
 
 ### WinterIsCoding Flow
+
 ![WinterIsCoding Flow Preview](./images/flow.png)
 
 ### WinterIsCoding Zone
+
 ![WinterIsCoding Zone Preview](./images/zone.png)
 
 ---
@@ -54,7 +66,7 @@ Companion color schemes for Windows Terminal and Alacritty are included in the [
 
 ## 📦 Installation
 
-### Visual Studio Code Marketplace:
+### Visual Studio Code Marketplace
 
 1. Open **VS Code**.
 2. Press `Ctrl+P` (or `Cmd+P` on macOS) and run `ext install winterx64.winteriscoding`.
