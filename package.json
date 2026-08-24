@@ -2,7 +2,7 @@
     "name": "winteriscoding",
     "displayName": "WinterIsCoding",
     "description": "A Cold theme for the people who like winter",
-    "version": "2.1.0",
+    "version": "2.2.0",
     "publisher": "winterx64",
     "repository": {
         "type": "git",
@@ -40,39 +40,44 @@
     "contributes": {
         "themes": [
             {
-                "label": "WinterIsCoding",
+                "label": "WinterIsCoding [OG]",
                 "uiTheme": "vs-dark",
                 "path": "./themes/WinterIsCoding-color-theme.json"
             },
             {
-                "label": "WinterIsCoding Flow",
+                "label": "WinterIsCoding [OG] Flow",
                 "uiTheme": "vs-dark",
                 "path": "./themes/WinterIsCoding-flow-color-theme.json"
             },
             {
-                "label": "WinterIsCoding Zone",
+                "label": "WinterIsCoding [OG] Zone",
                 "uiTheme": "vs-dark",
                 "path": "./themes/WinterIsCoding-Zone-color-theme.json"
             },
             {
-                "label": "WinterIsCoding Zone [no italic]",
+                "label": "WinterIsCoding [OG] Zone [no italic]",
                 "uiTheme": "vs-dark",
                 "path": "./themes/WinterIsCoding-Zone-no-italic-color-theme.json"
             },
             {
-                "label": "WinterIsCoding Midnight OLED",
+                "label": "WinterIsCoding [New] Midnight OLED",
                 "uiTheme": "vs-dark",
                 "path": "./themes/WinterIsCoding-OLED-color-theme.json"
             },
             {
-                "label": "WinterIsCoding Frost Light",
+                "label": "WinterIsCoding [New] Frost Light",
                 "uiTheme": "vs",
                 "path": "./themes/WinterIsCoding-Frost-Light-color-theme.json"
             },
             {
-                "label": "WinterIsCoding Preview",
+                "label": "WinterIsCoding [New] Focus Mode",
                 "uiTheme": "vs-dark",
                 "path": "./themes/gift.json"
+            },
+            {
+                "label": "WinterIsCoding [New] Ergonomic Preview",
+                "uiTheme": "vs-dark",
+                "path": "./themes/WinterIsCoding-Preview-color-theme.json"
             }
         ]
     },
