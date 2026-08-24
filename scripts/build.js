@@ -152,12 +152,12 @@ const darkModernUiTokens = {
     "keybindingTable.headerBackground": "#1f1f1f",
     "keybindingTable.rowsBackground": "#1a1a1a",
 
-    // Overview Ruler Indicators
-    "editorOverviewRuler.errorForeground": "#f48771",
-    "editorOverviewRuler.warningForeground": "#cca700",
-    "editorOverviewRuler.infoForeground": "#75beff",
-    "editorOverviewRuler.bracketMatchForeground": "#818cf8",
-    "editorOverviewRuler.findMatchForeground": "#ffcc5c",
+    // Overview Ruler Indicators (Transparent alpha channels so they don't obscure content)
+    "editorOverviewRuler.errorForeground": "#f48771bb",
+    "editorOverviewRuler.warningForeground": "#cca700bb",
+    "editorOverviewRuler.infoForeground": "#75beffbb",
+    "editorOverviewRuler.bracketMatchForeground": "#818cf8bb",
+    "editorOverviewRuler.findMatchForeground": "#ffcc5caa",
 
     // Banner & Notification Elements
     "banner.background": "#242424",
@@ -361,14 +361,14 @@ function updateTheme(filePath) {
         updatedTheme.colors = {};
     }
 
-    // Replace deprecated tokens if present
-    if (updatedTheme.colors["editorIndentGuide.background1"]) {
-        updatedTheme.colors["editorIndentGuide.background"] = updatedTheme.colors["editorIndentGuide.background1"];
-        delete updatedTheme.colors["editorIndentGuide.background1"];
+    // Replace deprecated editorIndentGuide tokens with background1
+    if (updatedTheme.colors["editorIndentGuide.background"]) {
+        updatedTheme.colors["editorIndentGuide.background1"] = updatedTheme.colors["editorIndentGuide.background"];
+        delete updatedTheme.colors["editorIndentGuide.background"];
     }
-    if (updatedTheme.colors["editorIndentGuide.activeBackground1"]) {
-        updatedTheme.colors["editorIndentGuide.activeBackground"] = updatedTheme.colors["editorIndentGuide.activeBackground1"];
-        delete updatedTheme.colors["editorIndentGuide.activeBackground1"];
+    if (updatedTheme.colors["editorIndentGuide.activeBackground"]) {
+        updatedTheme.colors["editorIndentGuide.activeBackground1"] = updatedTheme.colors["editorIndentGuide.activeBackground"];
+        delete updatedTheme.colors["editorIndentGuide.activeBackground"];
     }
 
     // Inject dark modern UI baseline
@@ -410,6 +410,16 @@ function generateOledVariant(baseThemePath) {
     // 1. Inject base modern dark tokens
     for (const [tokenKey, tokenVal] of Object.entries(darkModernUiTokens)) {
         themeData.colors[tokenKey] = tokenVal;
+    }
+
+    // Replace deprecated editorIndentGuide tokens with background1
+    if (themeData.colors["editorIndentGuide.background"]) {
+        themeData.colors["editorIndentGuide.background1"] = themeData.colors["editorIndentGuide.background"];
+        delete themeData.colors["editorIndentGuide.background"];
+    }
+    if (themeData.colors["editorIndentGuide.activeBackground"]) {
+        themeData.colors["editorIndentGuide.activeBackground1"] = themeData.colors["editorIndentGuide.activeBackground"];
+        delete themeData.colors["editorIndentGuide.activeBackground"];
     }
 
     // 2. Override with Pure OLED #000000 surfaces & wire borders
@@ -703,6 +713,16 @@ function generatePreviewVariant(baseThemePath) {
     // 1. Inject base modern dark tokens
     for (const [tokenKey, tokenVal] of Object.entries(darkModernUiTokens)) {
         themeData.colors[tokenKey] = tokenVal;
+    }
+
+    // Replace deprecated editorIndentGuide tokens with background1
+    if (themeData.colors["editorIndentGuide.background"]) {
+        themeData.colors["editorIndentGuide.background1"] = themeData.colors["editorIndentGuide.background"];
+        delete themeData.colors["editorIndentGuide.background"];
+    }
+    if (themeData.colors["editorIndentGuide.activeBackground"]) {
+        themeData.colors["editorIndentGuide.activeBackground1"] = themeData.colors["editorIndentGuide.activeBackground"];
+        delete themeData.colors["editorIndentGuide.activeBackground"];
     }
 
     // 2. Ocular & Cognitive Refinements on UI Tokens
