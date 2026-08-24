@@ -57,8 +57,11 @@
 
 ## 🖥️ Terminal Extras
 
-Companion color schemes for Windows Terminal and Alacritty are included in the [`extras/`](./extras) folder:
+Companion color schemes for modern terminal emulators are included in the [`extras/`](./extras) folder:
 
+- **Warp Terminal**:
+  - `WinterIsCoding [OG]`: [`extras/warp/winteriscoding-og.yaml`](./extras/warp/winteriscoding-og.yaml)
+  - `WinterIsCoding [OG] Zone`: [`extras/warp/winteriscoding-og-zone.yaml`](./extras/warp/winteriscoding-og-zone.yaml)
 - **Windows Terminal**: [`extras/windows-terminal/winteriscoding.json`](./extras/windows-terminal/winteriscoding.json)
 - **Alacritty**: [`extras/alacritty/winteriscoding.toml`](./extras/alacritty/winteriscoding.toml)
 
