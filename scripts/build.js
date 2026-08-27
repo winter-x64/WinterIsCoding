@@ -875,7 +875,7 @@ function generateZedThemes() {
 
     function buildDarkSyntax(options = {}) {
         const isItalic = options.italic !== false;
-        const stringColor = options.stringColor || "#77d2ff";
+        const stringColor = options.stringColor || "#c5f467";
         const keywordColor = options.keywordColor || "#6366f1";
 
         return {
@@ -969,16 +969,10 @@ function generateZedThemes() {
         "variant": { "color": "#0284c7" }
     };
 
-    const baseDarkStyle = {
-        "border": "#282828",
-        "border.variant": "#222222",
-        "border.focused": "#6366f1",
-        "border.selected": "#6366f1",
+    // Baseline shared dark UI tokens
+    const commonDarkUI = {
         "border.transparent": "#00000000",
         "border.disabled": "#333333",
-        "elevated_surface.background": "#1e1e1e",
-        "surface.background": "#1e1e1e",
-        "background": "#181818",
         "element.background": "#242424",
         "element.hover": "#2a2a2a",
         "element.active": "#333333",
@@ -1000,26 +994,13 @@ function generateZedThemes() {
         "icon.disabled": "#555555",
         "icon.placeholder": "#666666",
         "icon.accent": "#6366f1",
-        "status_bar.background": "#181818",
-        "title_bar.background": "#181818",
-        "title_bar.inactive_background": "#141414",
-        "toolbar.background": "#181818",
-        "tab_bar.background": "#141414",
-        "tab.inactive_background": "#141414",
-        "tab.active_background": "#181818",
         "search.match_background": "#6366f144",
-        "panel.background": "#181818",
-        "panel.focused_border": "#6366f1",
-        "pane.focused_border": "#6366f1",
         "scrollbar.thumb.background": "#ffffff22",
         "scrollbar.thumb.hover_background": "#ffffff44",
         "scrollbar.thumb.border": "#00000000",
         "scrollbar.track.background": "#00000000",
         "scrollbar.track.border": "#00000000",
         "editor.foreground": "#ffffff",
-        "editor.background": "#181818",
-        "editor.gutter.background": "#181818",
-        "editor.subheader.background": "#1a1a1a",
         "editor.active_line.background": "#222222",
         "editor.highlighted_line.background": "#282828",
         "editor.line_number": "#5a5a5a",
@@ -1041,46 +1022,89 @@ function generateZedThemes() {
         "syntax": buildDarkSyntax()
     };
 
-    // 1. WinterIsCoding [OG]
+    // 1. WinterIsCoding [OG] — Complete Multi-layer Panels Depth (#181818 / #1b1b1b / #1a1a1a / #101010)
     const ogTheme = {
         "name": "WinterIsCoding [OG]",
         "appearance": "dark",
-        "style": { ...baseDarkStyle }
+        "style": {
+            ...commonDarkUI,
+            "background": "#181818",
+            "surface.background": "#1b1b1b",
+            "elevated_surface.background": "#1e1e1e",
+            "panel.background": "#1b1b1b",
+            "tab_bar.background": "#141414",
+            "tab.inactive_background": "#141414",
+            "tab.active_background": "#1a1a1a",
+            "title_bar.background": "#181818",
+            "title_bar.inactive_background": "#141414",
+            "status_bar.background": "#101010",
+            "toolbar.background": "#181818",
+            "editor.background": "#1a1a1a",
+            "editor.gutter.background": "#1a1a1a",
+            "editor.subheader.background": "#1b1b1b",
+            "border": "#181818",
+            "border.variant": "#181818",
+            "border.focused": "#6366f1",
+            "border.selected": "#6366f1",
+            "panel.focused_border": "#6366f1",
+            "pane.focused_border": "#6366f1"
+        }
     };
 
-    // 2. WinterIsCoding [OG] Flow
+    // 2. WinterIsCoding [OG] Flow — Borderless Fluid Canvas (#181818 Everywhere, #00000000 Borders)
     const flowTheme = {
         "name": "WinterIsCoding [OG] Flow",
         "appearance": "dark",
         "style": {
-            ...baseDarkStyle,
-            "border": "#00000000",
-            "border.variant": "#00000000",
-            "border.focused": "#6366f188",
-            "panel.focused_border": "#00000000",
-            "pane.focused_border": "#00000000",
+            ...commonDarkUI,
+            "background": "#181818",
+            "surface.background": "#181818",
+            "elevated_surface.background": "#1e1e1e",
+            "panel.background": "#181818",
             "tab_bar.background": "#181818",
             "tab.inactive_background": "#181818",
             "tab.active_background": "#181818",
+            "title_bar.background": "#181818",
             "title_bar.inactive_background": "#181818",
-            "editor.active_line.background": "#202020"
+            "status_bar.background": "#181818",
+            "toolbar.background": "#181818",
+            "editor.background": "#181818",
+            "editor.gutter.background": "#181818",
+            "editor.subheader.background": "#181818",
+            "editor.active_line.background": "#202020",
+            "border": "#00000000",
+            "border.variant": "#00000000",
+            "border.focused": "#6366f188",
+            "border.selected": "#6366f188",
+            "panel.focused_border": "#00000000",
+            "pane.focused_border": "#00000000"
         }
     };
 
-    // 3. WinterIsCoding [OG] Zone
+    // 3. WinterIsCoding [OG] Zone — Framed Zones (#181818 Canvas + Crisp #282828 Dividing Borders)
     const zoneTheme = {
         "name": "WinterIsCoding [OG] Zone",
         "appearance": "dark",
         "style": {
-            ...baseDarkStyle,
+            ...commonDarkUI,
+            "background": "#181818",
+            "surface.background": "#181818",
+            "elevated_surface.background": "#1e1e1e",
+            "panel.background": "#181818",
+            "tab_bar.background": "#181818",
+            "tab.inactive_background": "#181818",
+            "tab.active_background": "#181818",
+            "title_bar.background": "#181818",
+            "title_bar.inactive_background": "#181818",
+            "status_bar.background": "#181818",
+            "toolbar.background": "#181818",
+            "editor.background": "#181818",
+            "editor.gutter.background": "#181818",
+            "editor.subheader.background": "#181818",
             "border": "#282828",
             "border.variant": "#282828",
             "border.focused": "#6366f1",
-            "surface.background": "#1a1a1a",
-            "panel.background": "#1a1a1a",
-            "tab_bar.background": "#141414",
-            "tab.inactive_background": "#141414",
-            "tab.active_background": "#181818",
+            "border.selected": "#6366f1",
             "panel.focused_border": "#6366f1",
             "pane.focused_border": "#6366f1"
         }
@@ -1096,12 +1120,12 @@ function generateZedThemes() {
         }
     };
 
-    // 5. WinterIsCoding [New] Midnight OLED
+    // 5. WinterIsCoding [New] Midnight OLED — Pure Black OLED Surfaces (#000000)
     const oledTheme = {
         "name": "WinterIsCoding [New] Midnight OLED",
         "appearance": "dark",
         "style": {
-            ...baseDarkStyle,
+            ...commonDarkUI,
             "background": "#000000",
             "surface.background": "#000000",
             "elevated_surface.background": "#0a0a0a",
@@ -1111,6 +1135,7 @@ function generateZedThemes() {
             "border": "#1a1a1a",
             "border.variant": "#141414",
             "border.focused": "#6366f1",
+            "border.selected": "#6366f1",
             "tab_bar.background": "#000000",
             "tab.inactive_background": "#000000",
             "tab.active_background": "#0a0a0a",
@@ -1119,8 +1144,11 @@ function generateZedThemes() {
             "title_bar.background": "#000000",
             "title_bar.inactive_background": "#000000",
             "panel.background": "#000000",
+            "panel.focused_border": "#6366f1",
+            "pane.focused_border": "#6366f1",
             "editor.background": "#000000",
             "editor.gutter.background": "#000000",
+            "editor.subheader.background": "#0a0a0a",
             "editor.active_line.background": "#0e0e0e",
             "editor.highlighted_line.background": "#141414",
             ...darkAnsi,
@@ -1211,7 +1239,7 @@ function generateZedThemes() {
         "name": "WinterIsCoding [New] Focus Mode",
         "appearance": "dark",
         "style": {
-            ...baseDarkStyle,
+            ...commonDarkUI,
             "background": "#0d1117",
             "surface.background": "#0d1117",
             "elevated_surface.background": "#161b22",
@@ -1260,7 +1288,7 @@ function generateZedThemes() {
         "name": "WinterIsCoding [New] Ergonomic Preview",
         "appearance": "dark",
         "style": {
-            ...baseDarkStyle,
+            ...commonDarkUI,
             "background": "#1a1a1a",
             "surface.background": "#1a1a1a",
             "elevated_surface.background": "#242424",
