@@ -55,10 +55,11 @@
 
 ---
 
-## 🖥️ Terminal Extras
+## 🖥️ Terminal & Editor Extras
 
-Companion color schemes for modern terminal emulators are included in the [`extras/`](./extras) folder:
+Companion color schemes for modern terminal emulators and code editors are included in the [`extras/`](./extras) folder:
 
+- **Zed Editor**: [`extras/zed/`](./extras/zed) (Full 8-variant theme family & extension package: [`extras/zed/themes/winteriscoding.json`](./extras/zed/themes/winteriscoding.json))
 - **Warp Terminal**:
   - `WinterIsCoding [OG]`: [`extras/warp/winteriscoding-og.yaml`](./extras/warp/winteriscoding-og.yaml)
   - `WinterIsCoding [OG] Zone`: [`extras/warp/winteriscoding-og-zone.yaml`](./extras/warp/winteriscoding-og-zone.yaml)
