@@ -1,0 +1,7 @@
+id = "winteriscoding"
+name = "WinterIsCoding"
+version = "2.3.0"
+schema_version = 1
+authors = ["winterx64 <itswinterx64@gmail.com>"]
+description = "A cold-toned modern theme pack for developers who love winter"
+repository = "https://github.com/winterx64/WinterIsCoding"
