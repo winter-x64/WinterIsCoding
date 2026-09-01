@@ -293,13 +293,44 @@ function applyVariantDesignPillars(filename, themeData) {
         colors["inputValidation.infoBorder"] = "#58a6ff";
     } else if (filename.includes('flow')) {
         // ==========================================
-        // 2. FLOW / SINGLE SHEET CANVAS (#00000000)
+        // 2. FLOW / SINGLE SHEET CANVAS (#181818 Everywhere, #00000000 Borders)
         // ==========================================
         themeData.name = "WinterIsCoding [OG] Flow";
+
+        // Unified canvas background
+        colors["editor.background"] = "#181818";
+        colors["editorGutter.background"] = "#181818";
+        colors["sideBar.background"] = "#181818";
+        colors["activityBar.background"] = "#181818";
+        colors["activityBar.activeBackground"] = "#181818";
+        colors["statusBar.background"] = "#181818";
+        colors["statusBar.debuggingBackground"] = "#181818";
+        colors["statusBarItem.remoteBackground"] = "#181818";
+        colors["titleBar.activeBackground"] = "#181818";
+        colors["titleBar.inactiveBackground"] = "#181818";
+        colors["panel.background"] = "#181818";
+        colors["breadcrumb.background"] = "#181818";
+        colors["editorGroupHeader.tabsBackground"] = "#181818";
+        colors["tab.activeBackground"] = "#181818";
+        colors["tab.inactiveBackground"] = "#181818";
+        colors["editorStickyScroll.background"] = "#181818";
+        colors["commandCenter.background"] = "#181818";
+        colors["inlineChat.background"] = "#181818";
+        colors["chat.requestBackground"] = "#181818";
+        colors["multiDiffEditor.background"] = "#181818";
+        colors["multiDiffEditor.headerBackground"] = "#181818";
+        colors["terminal.background"] = "#181818";
+
+        // Borderless fluid sheet
         colors["sideBar.border"] = "#00000000";
+        colors["sideBarSectionHeader.border"] = "#00000000";
+        colors["activityBar.border"] = "#00000000";
         colors["panel.border"] = "#00000000";
         colors["editorGroup.border"] = "#00000000";
         colors["editorGroupHeader.tabsBorder"] = "#00000000";
+        colors["tab.border"] = "#00000000";
+        colors["tab.hoverBorder"] = "#00000000";
+        colors["tab.activeBorder"] = "#6366f1";
         colors["statusBar.border"] = "#00000000";
         colors["titleBar.border"] = "#00000000";
         colors["diffEditor.border"] = "#00000000";
@@ -309,24 +340,56 @@ function applyVariantDesignPillars(filename, themeData) {
         colors["chat.requestBorder"] = "#00000000";
         colors["editorHoverWidget.border"] = "#00000000";
         colors["multiDiffEditor.border"] = "#00000000";
+        colors["terminal.border"] = "#00000000";
         colors["focusBorder"] = "#6366f188";
     } else if (filename.toLowerCase().includes('zone')) {
         // ==========================================
-        // 3. ZONE / FRAMED ZONE BORDERS (#282828)
+        // 3. ZONE / FRAMED ZONE BORDERS (#181818 Canvas + #282828 Borders)
         // ==========================================
         themeData.name = filename.includes('no-italic') ? "WinterIsCoding [OG] Zone [no italic]" : "WinterIsCoding [OG] Zone";
+
+        // Unified canvas background
+        colors["editor.background"] = "#181818";
+        colors["editorGutter.background"] = "#181818";
+        colors["sideBar.background"] = "#181818";
+        colors["activityBar.background"] = "#181818";
+        colors["activityBar.activeBackground"] = "#181818";
+        colors["statusBar.background"] = "#181818";
+        colors["statusBar.debuggingBackground"] = "#181818";
+        colors["statusBarItem.remoteBackground"] = "#181818";
+        colors["titleBar.activeBackground"] = "#181818";
+        colors["titleBar.inactiveBackground"] = "#181818";
+        colors["panel.background"] = "#181818";
+        colors["breadcrumb.background"] = "#181818";
+        colors["editorGroupHeader.tabsBackground"] = "#181818";
+        colors["tab.activeBackground"] = "#181818";
+        colors["tab.inactiveBackground"] = "#181818";
+        colors["editorStickyScroll.background"] = "#181818";
+        colors["commandCenter.background"] = "#181818";
+        colors["multiDiffEditor.background"] = "#181818";
+        colors["multiDiffEditor.headerBackground"] = "#181818";
+        colors["terminal.background"] = "#181818";
+
+        // Framed Zone wire borders
         colors["sideBar.border"] = "#282828";
+        colors["sideBarSectionHeader.border"] = "#282828";
+        colors["activityBar.border"] = "#282828";
         colors["panel.border"] = "#282828";
-        colors["editorGroup.border"] = "#333333";
+        colors["editorGroup.border"] = "#282828";
         colors["editorGroupHeader.tabsBorder"] = "#282828";
+        colors["tab.border"] = "#282828";
+        colors["tab.hoverBorder"] = "#282828";
+        colors["tab.activeBorder"] = "#6366f1";
         colors["statusBar.border"] = "#282828";
         colors["titleBar.border"] = "#282828";
-        colors["diffEditor.border"] = "#333333";
+        colors["diffEditor.border"] = "#282828";
         colors["editorStickyScroll.border"] = "#282828";
         colors["commandCenter.border"] = "#303030";
         colors["editorHoverWidget.border"] = "#333333";
         colors["inlineChat.border"] = "#333333";
+        colors["chat.requestBorder"] = "#282828";
         colors["multiDiffEditor.border"] = "#282828";
+        colors["terminal.border"] = "#282828";
         colors["focusBorder"] = "#6366f1";
     } else {
         // ==========================================
